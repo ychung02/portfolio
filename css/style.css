@@ -1,0 +1,29 @@
+.inception-image {
+	position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-size: 100%;
+  background-position: 0 25px;
+  background-repeat: no-repeat;
+  float:left;
+  margin-right: 20px;
+}
+
+  .work .details, .work-image {
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 10vw;
+}
+
+
+body { background-color: #F8F8FF;
+	background-image: url("http://i57.tinypic.com/v30huv.png") 
+	background-repeat: no-repeat;
+	width: 6000px;
+	float:left;}
+
+body background{
+	background-image: url("http://i57.tinypic.com/v30huv.png") 
+	background-repeat: no-repeat;
+	background-position: fixed;
+	float:left;}
