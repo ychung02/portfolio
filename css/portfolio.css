@@ -4,12 +4,36 @@ section:after {
   clear: both;
 }
 section{
-	width:90%;
-	background-color: grey;
-	margin-left: 10%;
+	width:92%;
+	/*background-color: grey;*/
+	margin-left: 8%;
+  transition: transform 0.5s ease;
+}
+section.pushed {
+  transform: translateX(250px);
 }
 body{
 	margin:0;
+}
+#myinfo{
+  width:92%;
+}
+#home_image {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+#space {
+  background: none;
+}
+#space #spacer {
+  width: 100%;
+  padding-bottom: 70%;
+}
+#about{
+  width:100%;
+  background-color: white;
+  height:850px;
 }
 .home{
 	width:100%;
@@ -17,7 +41,7 @@ body{
 	background-color: grey;
 	float:left;
 	background-size: cover;
-	background-position:center;
+	background-position:center fixed;
 }
 #home{
 	background-image: url(../images/main/home.png);
@@ -29,267 +53,234 @@ body{
 	float:left;
 	background-size: cover;
 	background-position:center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
-#project_1{
-	background-image: url(../images/1.png);
+.project .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position:center;
 }
-#project_2{
+
+#project_1 .image {
+	background-image: url(../images/main/1.png);
+  transition: all 0.5s ease-in-out;
+}
+#project_2 .image {
 	background-image: url(../images/main/switch.png);
 	transition: all 0.5s ease-in-out;
 }
-#project_3{
+#project_3 .image {
 	background-image: url(../images/main/museum.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_4{
+#project_4 .image {
 	background-image: url(../images/main/selfies.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_5{
+#project_5 .image {
 	background-image: url(../images/main/mate.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_6{
+#project_6 .image {
 	background-image: url(../images/main/cca_poster.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_7{
+#project_7 .image {
 	background-image: url(../images/main/expose.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_8{
+#project_8 .image {
 	background-image: url(../images/main/pattern.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_9{
+#project_9 .image {
 	background-image: url(../images/main/photo.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_10{
+#project_10 .image {
 	background-image: url(../images/main/space.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_11{
+#project_11 .image {
 	background-image: url(../images/main/package.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
-#project_12{
+#project_12 .image {
 	background-image: url(../images/main/1q84.png);
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
 }
 
-#project_1:hover{
-	max-width: none;
-	width: -webkit-calc(100% + 50px);
-	width: calc(100% + 50px);
-	opacity: 0.7;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-40px,0, 0);
-	transform: translate3d(-40px,0,0);;
-}
-#project_2:hover{
+#project_1:hover .image{
 	opacity: 0.3;
-	transform: scale(1.1);
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_3:hover{
+#project_2:hover .image{
 	opacity: 0.3;
+	transform: translate3d(0,0,0) scale(1.1);
 }
-#project_4:hover{
+#project_3:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_5:hover{
+#project_4:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_6:hover{
+#project_5:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_7:hover{
+#project_6:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_8:hover{
+#project_7:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_9:hover{
+#project_8:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_10:hover{
+#project_9:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_11:hover{
+#project_10:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
-#project_12:hover{
+#project_11:hover .image{
 	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
+}
+#project_12:hover .image{
+	opacity: 0.3;
+  transform: translate3d(0,0,0) scale(1.1);
 }
 
 
+.aboutinfo{
+  background-color: white;
+}
+.aboutinfo p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 200%;
+  font-size: 2em;
+  margin-left: 50px;
+  margin-right: 60px;
+  position: absolute;
+  margin-top: 200px;
+}
 
+.text{
+    background-color: white;
+    width:700px;
+    opacity: 0.7;
+    height:230px;
+    margin-bottom: 0;
+    float:right;
+    margin-top: 500px;
+    position: absolute;
+}
+.text p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: -1000%;
+  font-size: 2.5em;
+  margin-left: 40px;
+  position: absolute;
+  margin-top: 50px;
+}
+.text p2 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 40px;
+  position: absolute;
+  margin-top: 120px;
+}
+/* nav */
 
 .container {
-  margin: 0 auto;
-  width: 10%;
-  margin: 0 5% 0 0;
-  position: relative;
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-header {
-  width: 5%;
-  height: 100%;
   position: fixed;
-  overflow: hidden;
-  transition: .32s ease-out;
-  z-index: 2;
-  background: white;
+  top: 0;
+  width: 10%;
 }
-
-header a,
-.navBtn { color: black; }
-
-.toggle { width: 312px; }
-
-.reveal {
-  opacity: 1;
+header {
+  width: 100%;
+}
+#nav-button {
+  position: absolute;
+  top: 0;
   left: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  cursor: pointer;
+}
+#nav-button .rect {
+  position: absolute;
+  width: 32%;
+  height: 5%;
+  left: 25%;
+  background: black;
+  transition: all 0.5s ease;
+}
+#nav-button .rect:first-child {
+  top: 36%;
+  transform-origin: 0 100%;
+}
+#nav-button .rect:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#nav-button .rect:last-child {
+  bottom: 36%;
+  transform-origin: 0 0;
+}
+nav {
+  margin-top: 100%;
+}
+nav a {
+  display: block;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 200%;
+  font-size: 2em;
+  margin-left: calc(100%);
 }
 
 nav {
-  padding-left: 360px;
-  overflow: hidden;
-  position: absolute;
-  transition: .3s ease-out;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  height: 100%;
-}
-
-nav a {
-  float: left;
-  padding: 8px 0;
-  opacity: .5;
-  width: 100%;
-  transition: .3s ease;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1.85em;
-}
-
-nav a:hover,
-.current,
-.toggle .navBtn { opacity: 1; }
-
-.toggle nav {
-  padding-left: 60px;
-  opacity: 1;
-}
-
-.navBtn {
-  font-size: 2em;
-  font-weight: 700;
-  margin: 30px 0 0;
-  width: 100%;
-  text-align: center;
-  line-height: 1em;
-  -webkit-transform: rotate(0deg);
-  transition: .3s ease-out;
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1000001;
-  opacity: .5;
-  left: 0;
-}
-
-.toggle .navBtn {
-  -webkit-transform: rotate(224deg);
-  color: black;
-  left: -100px;
-}
-
-.navBtn:hover { opacity: 1; }
-
-.main {
-  background: black;
-  float: right;
-  width: 95%;
-  margin: 0 0 0 5%;
-  padding: 0;
-  transition: .6s ease-in;
-  overflow: hidden;
-  z-index: 2;
-}
-
-h3 {
-  font-size: 3em;
-  color: black;
-  font-weight: 300;
-  transition: .6s ease-in;
-  line-height: 1em;
-}
-
-.push {
-  margin-left: 240px;
-  margin-right: -240px;
-  transition: .3s ease-in;
-}
-
-.overlay {
-  width: 100%;
-  background: white;
-  opacity: .85;
-  z-index: 1;
-  height: 100%;
-  position: fixed;
   display: none;
 }
 
-.block { display: block; }
-
-/* 1024 */
-@media only screen and (max-width: 1024px) {
-
-.container {
-  width: 100%;
-  margin: 0;
+header.toggle #nav-button .rect:first-child {
+  transform: rotate(42.5deg);
+}
+header.toggle #nav-button .rect:nth-child(2) {
+  opacity: 0;
+}
+header.toggle #nav-button .rect:last-child {
+  transform: rotate(-42.5deg);
+}
+header.toggle nav {
+  display: block;
 }
 
-header { width: 8%; }
 
-.main { width: 92%; }
-}
-
-/* 768 */
-@media only screen and (max-width: 768px) {
-
-header { width: 10%; }
-
-.main { width: 90%; }
-}
-
-/* 480 */
-@media only screen and (max-width: 480px) {
-
-header { width: 10%; }
-
-.main { width: 90%; }
-
-h3 { font-size: 2em; }
-
-/* 320 */
-@media only screen and (max-width: 320px) {
- header {
- width: 15%;
-}
- .main {
- width: 85%;
-}
-}
