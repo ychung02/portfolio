@@ -1,33 +1,14 @@
-# portfolio
-<html>
+# Eunice Yoo Jeong Chung
+<p>http://ychung02.github.io/portfolio/</p>
 
-<head>
+1. A collection of coding experiments.
+2. A portfolio website that shows who I am as a designer.
 
-  <meta charset="UTF-8">
+##The Collection
+I wanted to create a collection of projects that I will contintue to upload. These were my first tryouts for coding and I used images of James Turrell to develop my concept. 
+http://ychung02.github.io/collection/
 
-  <title>turrell_1</title>
+##Portfolio
+To learn more about basic coding and further more, I began to build a portfolio website. I learned most from building this website and I want to continue this exploration.
+http://ychung02.github.io/portfolio/
 
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-  <html>
-    <head>
-      <title>James Turrell 1</title>
-      <script src="js/mootools-124-core.js" type="text/javascript"></script>
-      <script language="JavaScript" src="js/mootools-124-more.js" type="text/javascript"></script>
-      <script src="js/moozoom.js" type="text/javascript"></script>
-     </head>
-    <body>
-      <div class="zoombox">
-  <img src="http://ad009cdnb.archdaily.net/wp-content/uploads/2013/05/51a7b5c3b3fc4b10be000379_light-matters-seeing-the-light-with-james-turrell_turrell_-_the_light_inside.jpg" class="moozoom" width="100%" height="100%" />
-</div>
-aa
-      </body>
-  </html>
-
-</body>
-
-</html>
